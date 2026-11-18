@@ -1,0 +1,8 @@
+AEGIS - Global Solution 2026.2 (CitizenTech)
+Data Science & Statistical Computing - Engenharia de Software, 2º ano (Fev) - FIAP
+
+Integrantes:
+Enzo Fernandes Ramos - RM 563705
+Felipe Henrique de Souza Cerazi - RM 562746
+Gustavo Peaguda de Castro - RM 562923
+Lorenzo Andolfatto Coque - RM 563385

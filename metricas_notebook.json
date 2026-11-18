@@ -1,0 +1,18 @@
+{
+  "linhas_treino": 1775,
+  "linhas_teste": 430,
+  "limiar_escolhido": 0.45,
+  "linear_teste": {
+    "MAE": 10.685316894301849,
+    "RMSE": 16.42636598180817,
+    "R²": 0.7736267812429682
+  },
+  "logistica_teste": {
+    "Acurácia": 0.8767441860465116,
+    "Precisão": 0.7651515151515151,
+    "Recall": 0.8211382113821138,
+    "F1": 0.792156862745098
+  },
+  "validacao_rmse_linear": 47.76237247637386,
+  "validacao_f1_logistica": 0.7775467775467776
+}

@@ -1,0 +1,24 @@
+FONTE DOS DADOS
+
+Arquivo: dengue_infodengue_2018_2026_5municipios.csv
+Fonte: InfoDengue (Fiocruz / FGV) - https://info.dengue.mat.br
+Acesso: API publica alertcity, doenca dengue, baixado em 06/11/2026
+Periodo: semana epidemiologica 01/2018 a 43/2026 (461 semanas por municipio, 2.305 linhas)
+Os cinco arquivos originais (um por municipio) foram apenas juntados, sem alterar nenhum valor.
+Documentacao das colunas: https://info.dengue.mat.br/services/api
+
+Links usados (um por municipio):
+Sao Paulo (IBGE 3550308): https://info.dengue.mat.br/api/alertcity?geocode=3550308&disease=dengue&format=csv&ew_start=1&ew_end=53&ey_start=2018&ey_end=2026
+Osasco (IBGE 3534401): https://info.dengue.mat.br/api/alertcity?geocode=3534401&disease=dengue&format=csv&ew_start=1&ew_end=53&ey_start=2018&ey_end=2026
+Santo Andre (IBGE 3547809): https://info.dengue.mat.br/api/alertcity?geocode=3547809&disease=dengue&format=csv&ew_start=1&ew_end=53&ey_start=2018&ey_end=2026
+Sao Bernardo do Campo (IBGE 3548708): https://info.dengue.mat.br/api/alertcity?geocode=3548708&disease=dengue&format=csv&ew_start=1&ew_end=53&ey_start=2018&ey_end=2026
+Sao Caetano do Sul (IBGE 3548807): https://info.dengue.mat.br/api/alertcity?geocode=3548807&disease=dengue&format=csv&ew_start=1&ew_end=53&ey_start=2018&ey_end=2026
+
+BASE TRATADA
+
+Arquivo: dengue_base_tratada.csv
+Gerado pelo notebook AEGIS_DataScience_GS.ipynb (secao 2.7) a partir do arquivo original acima.
+Tratamento (secao 2.3): remocao de colunas vazias, constantes e sem uso; conversao de tipos e ordenacao;
+checagem de duplicidades; remocao das semanas ainda em aberto (SE 34 a 43 de 2026); calculo da incidencia
+por 100 mil habitantes; defasagens e alvos de 4 semanas a frente; remocao das linhas incompletas.
+Resultado: 2.205 linhas (municipio x semana) e 18 colunas, com a coluna "conjunto" (treino ou teste).
